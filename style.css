@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #a8edea, #fed6e3);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .myTaskInput {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .myTaskInput input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .myTaskInput button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .filters button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    background: #eee;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .task-buttons button {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 480px) {
+    .task-input, .filters {
+      flex-direction: column;
+    }
+  
+    .filters button {
+      margin: 5px 0;
+    }
+  }
+  
